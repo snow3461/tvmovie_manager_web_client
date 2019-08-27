@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <app-movie
+    *ngFor="let movie of movies"
+    [movieId]="movie.id"
+    [movieTitle]="movie.title"
+    [movieReleaseDate]="movie.release_date"
+    [movieStatus]="movie.status"
+    [moviePosterUrl]="movie.poster_url"
+    [movieOverview]="movie.overview"
+  >
+  </app-movie>
+</ul>
